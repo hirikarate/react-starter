@@ -2,11 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#000000" />
-		<meta name="description" content="Web site created using create-react-app" />
-		<link rel="apple-touch-icon" href="./logo192.png" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
 
 		<title>React App</title>
@@ -18,41 +14,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-		<script type="text/babel">
-			const e = React.createElement
-
-			class HelloComponent extends React.Component {
-				render() {
-					const h3Style = { color: 'blue' }
-					const h4Style = { 'text-align': 'right' }
-					return (
-						<div className='alert alert-success' role='alert'>
-							<h3 style={h3Style}>Hello</h3>
-							<h4 style={h4Style}>CodeSchool</h4>
-						</div>
-					)
-				}
-			}
-
-			class ContainerComponent extends React.Component {
-				render() {
-					return e('div', { className: 'container' },
-						e('div', { className: 'card' },
-							e('div', { className: 'card-header' },
-								'React Example - by CodeSchool.VN'
-							),
-							e('div', { className: 'card-body' },
-								e(HelloComponent)
-							),
-						)
-					)
-				}
-			}
-
-			ReactDOM.render(
-				<ContainerComponent />,
-				document.getElementById('root'),
-			)
-		</script>
+		<script type="text/babel" src="../src/App.js"></script>
+		<script type="text/babel" src="../src/index.js"></script>
 	</body>
 </html>
