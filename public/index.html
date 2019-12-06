@@ -17,18 +17,19 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"></script>
-		<script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+		<script type="text/babel">
 			const e = React.createElement
 
 			class HelloComponent extends React.Component {
 				render() {
 					const h3Style = { color: 'blue' }
 					const h4Style = { 'text-align': 'right' }
-					return e(
-						'div',
-						{ className: 'alert alert-success', role: 'alert' },
-						e('h3', { style: h3Style }, 'Hello'),
-						e('h4', { style: h4Style }, 'CodeSchool'),
+					return (
+						<div className='alert alert-success' role='alert'>
+							<h3 style={h3Style}>Hello</h3>
+							<h4 style={h4Style}>CodeSchool</h4>
+						</div>
 					)
 				}
 			}
@@ -49,7 +50,7 @@
 			}
 
 			ReactDOM.render(
-				React.createElement(ContainerComponent, null),
+				<ContainerComponent />,
 				document.getElementById('root'),
 			)
 		</script>
