@@ -2,9 +2,9 @@
 const PROG_STYLE = { width: '50%' }
 
 const ProgressInfo = () => (
-	<div class="progress">
+	<div className="progress">
 		<div
-			style={PROG_STYLE} ariaValuenow="50" ariaValuemin="0" ariaValuemax="100"
+			style={PROG_STYLE} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
 			className="progress-bar bg-info" role="progressbar"
 		>
 		</div>
