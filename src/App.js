@@ -1,47 +1,78 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
-import Alert from './components/Alert'
-import Card from './components/Card'
-import Progress from './components/Progress'
-// import ProgressInfo from './components/ProgressInfo'
-// import ProgressWarning from './components/ProgressWarning'
-
-import logo from './logo.svg'
+import Challenge01 from './containers/Challenge01'
+import Challenge02 from './containers/Challenge02'
+import Challenge03 from './containers/Challenge03'
+import Challenge04 from './containers/Challenge04'
+import Challenge05 from './containers/Challenge05'
+import Challenge06 from './containers/Challenge06'
+import Challenge07 from './containers/Challenge07'
+import Challenge08 from './containers/Challenge08'
+import Challenge09 from './containers/Challenge09'
+import Challenge10 from './containers/Challenge10'
 import './App.css'
 
 
 export default class App extends React.Component {
 	render() {
+
 		return (
-			<main className="container my-5">
-				<div className="row">
-					<div className="col-12">
-						<img src={logo} width="300" className="App-logo" alt="logo" />
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-6">
-						<Card />
-					</div>
-					<div className="col-6">
-						<Alert variant="success" message="A simple successful alert—check it out!" />
-						<Alert variant="danger" message="A simple dangerous alert—check it out!" />
-						<Alert variant="info">
-							<h4>A simple informative alert!</h4>
-							<h5>Check it out!</h5>
-						</Alert>
-						{/* <ProgressInfo />
+			<Container as="main" className="my-5">
+				<Row className="mb-3">
+					<Col>
+						<h5>Challenge 10</h5>
+						<Challenge10 />
+					</Col>
+				</Row>
+				<Row className="mb-3">
+					<Col>
+						<h5>Challenge 09</h5>
+						<Challenge09 />
+					</Col>
+				</Row>
+				<Row className="mb-3">
+					<Col>
+						<h5>Challenge 05</h5>
+						<Challenge05 />
+					</Col>
+					<Col>
+						<h5>Challenge 06</h5>
+						<Challenge06 />
+					</Col>
+				</Row>
+				<Row className="mb-3">
+					<Col>
+						<h5>Challenge 07</h5>
+						<Challenge07 />
+					</Col>
+					<Col>
+						<h5>Challenge 09</h5>
+						<Challenge08 />
+					</Col>
+				</Row>
+				<Row className="mb-3">
+					<Col>
+						<h5>Challenge 02</h5>
+						<Challenge02 />
+					</Col>
+					<Col>
+						<h5>Challenge 04</h5>
+						<Challenge04 />
 						<br/>
-						<ProgressWarning /> */}
 						<br/>
-						{/* <Progress value="75" /> */}
-						<Progress value={75} />
+
+						<h5>Challenge 03</h5>
+						<Challenge03 />
 						<br/>
-						{/* <Progress value={39} variant="excited" isStriped isAnimated={false} /> */}
-						<Progress value={39} variant="success" isStriped isAnimated={false} />
-					</div>
-				</div>
-			</main>
+						<br/>
+						<h5>Challenge 01</h5>
+						<Challenge01 />
+					</Col>
+				</Row>
+			</Container>
 		)
 	}
 }

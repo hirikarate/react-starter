@@ -1,18 +1,35 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
+import BsCard from 'react-bootstrap/Card'
 
 class Card extends React.Component {
 	render() {
+		const {header: CardHeader, title, children, bg="primary", text="black", ...others} = this.props
 		return (
-			<div className="card">
-				<h5 className="card-header text-white bg-primary">Header</h5>
-				<div className="card-body">
-					<h5 className="card-title">Primary card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-			</div>
+			<BsCard {...others}>
+				{ CardHeader
+					? <BsCard.Header className={`text-${text} bg-${bg}`}>
+						<CardHeader />
+					  </BsCard.Header>
+					: null
+				}
+				<BsCard.Body>
+					{ title &&
+						<BsCard.Title as="h5">{title}</BsCard.Title>
+					}
+					{children}
+				</BsCard.Body>
+			</BsCard>
 		)
 	}
+}
+
+Card.propTypes = {
+	header: PropTypes.elementType,
+	title: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.element,
+	]),
 }
 
 export default Card

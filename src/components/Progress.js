@@ -1,6 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/*
+ * Should be in challenge of Lesson 08:
+ * - Higher-order Component (Alert)
+ * - Named export
+ * - Card component
+ */
+
 
 // C.1: ES 5
 // const Progress = (props) => (
@@ -48,3 +55,6 @@ Progress.propTypes = {
 }
 
 export default Progress
+
+export const ProgressInfo = (props) => <Progress variant="info" {...props} />
+export const ProgressWarning = (props) => <Progress variant="info" {...props} />
