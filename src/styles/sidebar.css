@@ -1,0 +1,25 @@
+
+.sidebar {
+	overflow-y: auto;
+}
+
+
+@media (max-width: 991px) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -310px;
+		z-index: 999;
+		overflow-y: auto;
+		height: 100vh;
+		width: 300px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.sidebar {
+		position: static;
+		height: calc(100vh - 65px);
+	}
+}

@@ -1,0 +1,20 @@
+
+header {
+	color: #72777A;
+}
+
+header,
+.header__item {
+	height: 65px;
+	line-height: 65px;
+}
+
+.header__item sup {
+	position: relative;
+	right: 10px;
+}
+
+.header-avatar {
+	height: 32px;
+	margin-left: 10px;
+}

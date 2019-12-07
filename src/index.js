@@ -1,5 +1,5 @@
 
 ReactDOM.render(
-	<ContainerComponent />,
+	<App />,
 	document.getElementById('root'),
 )
