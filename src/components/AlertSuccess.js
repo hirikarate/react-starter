@@ -1,3 +1,5 @@
+import React from 'react'
+
 
 function AlertSuccess() {
 	return (
@@ -7,4 +9,4 @@ function AlertSuccess() {
 	)
 }
 
-window.AlertSuccess = AlertSuccess
+export default AlertSuccess

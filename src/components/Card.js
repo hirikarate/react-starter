@@ -1,3 +1,5 @@
+import React from 'react'
+
 
 function Card() {
 	return (
@@ -11,4 +13,4 @@ function Card() {
 	)
 }
 
-window.Card = Card
+export default Card

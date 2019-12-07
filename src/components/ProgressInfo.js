@@ -1,3 +1,5 @@
+import React from 'react'
+
 
 const PROG_STYLE = { width: '50%' }
 
@@ -11,4 +13,4 @@ const ProgressInfo = () => (
 	</div>
 )
 
-window.ProgressInfo = ProgressInfo
+export default ProgressInfo

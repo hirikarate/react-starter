@@ -1,5 +1,13 @@
+import React from 'react'
 
-class App extends React.Component {
+import AlertDanger from './components/AlertDanger'
+import AlertSuccess from './components/AlertSuccess'
+import Card from './components/Card'
+import ProgressInfo from './components/ProgressInfo'
+import ProgressWarning from './components/ProgressWarning'
+
+
+export default class App extends React.Component {
 	render() {
 		return (
 			<main className="container mt-5">
@@ -19,5 +27,3 @@ class App extends React.Component {
 		)
 	}
 }
-
-window.App = App

@@ -1,3 +1,5 @@
+import React from 'react'
+
 
 function AlertDanger() {
 	return (
@@ -7,4 +9,4 @@ function AlertDanger() {
 	)
 }
 
-window.AlertDanger = AlertDanger
+export default AlertDanger
